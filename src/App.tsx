@@ -1,10 +1,12 @@
-import React from 'react';
+import { PDFViewer } from "@react-pdf/renderer";
+import { MyDocument } from "./DocExample";
+import "./App.css";
 
 function App() {
   return (
-    <div>
-      <h1>Welcome to React with Vite!</h1>
-    </div>
+    <PDFViewer className="pdf-viewer">
+      <MyDocument />
+    </PDFViewer>
   );
 }
 
